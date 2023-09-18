@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import { TypeAnimation } from 'react-type-animation';
+import { useState } from 'react';
 
 const Hero = () => {
+  const [textColors, setTextColors] = useState('text-white'); 
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -15,9 +17,25 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Falgun</span>
-          </h1>
+          {/* <h1 className={`${styles.heroHeadText} text-white`}> */}
+          <TypeAnimation
+            sequence={[
+              'Hi,', // Types 'One'
+              1000, // Waits 1s
+              "I'm", // Deletes 'One' and types 'Two'
+              1000, // Waits 2s
+              'Falgun Dudhat', // Types 'Three' without deleting 'Two'
+              3000,
+              () => setTextColors('#915EFF'),
+              '',
+            ]}
+            wrapper="h1"
+            cursor={true}
+            repeat={Infinity}
+            className={`${styles.heroHeadText} ${textColors}}`}
+            style={{ display: 'inline-block' }}
+          />
+          {/* </h1> */}
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop APIs <br className='sm:block hidden' />
             and web applications

@@ -13,16 +13,14 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
     threejs,
+    rapidops,
+    matlabinfo,
+    inappchat,
   } from "../assets";
   
   export const navLinks = [
@@ -114,9 +112,10 @@ import {
     {
       title: "Junior Software Developer",
       company_name: "Rapidops, Inc",
-      icon: "https://rapidops.com/wp-content/uploads/2020/06/rapidops-logo.svg",
+      icon: rapidops,
       iconBg: "#383E56",
       date: "June 2019 - November 2020",
+      linkedinUrl: "https://www.linkedin.com/company/rapidops-inc/",
       points: [
         "During my tenure at RapidOps Solutions, I specialized in developing APIs using Node.js and MongoDB.",
         "My focus was primarily on creating efficient and scalable solutions, and I gained expertise in implementing clean code architecture principles to ensure code maintainability and scalability.",
@@ -126,9 +125,10 @@ import {
     {
       title: "Senior Software Developer",
       company_name: "MatlabInfotech",
-      icon: "https://www.matlabinfotech.com/images/logo.png",
-      iconBg: "#E6DEDD",
+      icon: matlabinfo,
+      iconBg: "#383E56",
       date: "January 2021 - April 2022",
+      linkedinUrl: "https://www.linkedin.com/company/matlabinfotech/",
       points: [
         "At Matlab Infotech, I had the privilege of working on a diverse range of projects, including a multi-tenant chat application, a financial application, and a low-code framework.",
         "As a Senior Node.js Developer, I was responsible for leading a team and providing training and support to new team members.",
@@ -139,9 +139,10 @@ import {
     {
       title: "Back End Developer",
       company_name: "Rip Bull Networks / In-App Chat",
-      icon: "https://www.ripbullnetworks.com/images/logo.png",
-      iconBg: "#E6DEDD",
+      icon: inappchat,
+      iconBg: "#383E56",
       date: "June 2022 - May 2023",
+      linkedinUrl: "https://www.linkedin.com/company/rip-bull-networks-inc/",
       points: [
         "At InappChat, I have had the opportunity to contribute my expertise in both in-app chat development and backend engineering.",
         "Within this organization, my role involves the development and maintenance of new APIs.",
@@ -182,9 +183,9 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Online File Sharing",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "This project allows users to securely upload, manage, share, and collaborate on files with others.Key features include user authentication, file upload/download, file sharing with permissions, and a responsive design for optimal usability.",
       tags: [
         {
           name: "react",
@@ -195,11 +196,11 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "NodeJs",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: "",
       source_code_link: "https://github.com/",
     },
     {
