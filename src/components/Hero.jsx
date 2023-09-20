@@ -24,10 +24,9 @@ const Hero = () => {
               1000, // Waits 1s
               "I'm", // Deletes 'One' and types 'Two'
               1000, // Waits 2s
-              'Falgun Dudhat', // Types 'Three' without deleting 'Two'
+              () => setTextColors('text-[#915EFF]'),
+              "Falgun Dudhat", // Types 'Three' without deleting 'Two'
               3000,
-              () => setTextColors('#915EFF'),
-              '',
             ]}
             wrapper="h1"
             cursor={true}
@@ -37,8 +36,10 @@ const Hero = () => {
           />
           {/* </h1> */}
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop APIs <br className='sm:block hidden' />
-            and web applications
+            I am a full-stack web developer.
+          </p>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+            Checkout my <a href="https://www.linkedin.com/in/falgundudhat/" target="_blank" className={`${styles.heroSubText} mt-2 text-[#915EFF]`}>Linkedin</a>
           </p>
         </div>
       </div>

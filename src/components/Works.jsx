@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
+import { projects, urls } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -27,11 +27,11 @@ const ProjectCard = ({
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className='relative w-full h-[230px]'>
-          {/* <img
+          <img
             src={image}
             alt='project_image'
             className='w-full h-full object-cover rounded-2xl'
-          /> */}
+          />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
@@ -80,11 +80,12 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my skills and experience through
+          Following are few projects that showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
+          links to code repositories. It reflects my
           ability to solve complex problems, work with different technologies,
           and manage projects effectively.
+          For more projects please checkout my <a href={urls.github} target="_blank" className={`text-[#915EFF]`}>Github Profile</a>
         </motion.p>
       </div>
 

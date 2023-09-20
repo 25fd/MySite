@@ -29,6 +29,8 @@ import rapidops from "./company/rapidops.jpeg";
 import matlabinfo from "./company/matlabinfo.jpeg";
 import inappchat from "./company/inappchat.jpeg";
 
+import fdGitHome from "./Fd_git_home.png";
+
 export {
   logo,
   backend,
@@ -57,4 +59,5 @@ export {
   rapidops,
   matlabinfo,
   inappchat,
+  fdGitHome,
 };

@@ -21,6 +21,7 @@ import {
     rapidops,
     matlabinfo,
     inappchat,
+    fdGitHome,
   } from "../assets";
   
   export const navLinks = [
@@ -200,51 +201,54 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: "",
-      source_code_link: "https://github.com/",
+      image: fdGitHome,
+      source_code_link: "https://github.com/25fd/ByteByteBox",
     },
     {
-      name: "Job IT",
+      name: "Car Rental",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A car rental application that allows users to rent cars, manage bookings, and view their rental history. Key features include user authentication, car search and filtering, booking management, and a responsive design for optimal usability.",
       tags: [
         {
-          name: "react",
+          name: "NextJs",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "ReactJs",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Tailwind",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: fdGitHome,
+      source_code_link: "https://github.com/25fd/Car_Rent_NextJS",
     },
     {
-      name: "Trip Guide",
+      name: "Return Product  System",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A E-commerce application that allows users to return products, admin to access all return products, and view their return history. Key features include user authentication, product search and filtering, and return product management.",
       tags: [
         {
-          name: "nextjs",
+          name: "Java",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "JSP",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Servlet",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: fdGitHome,
+      source_code_link: "https://github.com/25fd/ECom-Return-System",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  const urls = {
+    github: "https://github.com/25fd?tab=repositories",
+  }
+  export { services, technologies, experiences, testimonials, projects, urls };
